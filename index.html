@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+  <!-- tailwind and daisy ui cdn -->  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google lato font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<!-- custom styles -->
+<style>
+    .font-Lato {
+        font-family: font-family: 'Lato', sans-serif;
+    }
+</style>
+<!-- tailwind custom classes -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                
+                   
+                }
+            }
+        }
+    }
+</script>
+
+</head>
+
+<body class="font-Lato">
+    <header  class="md:container md:mx-auto rounded-[600px]">
+            <nav class="max-w-screen-2xl h-56 flex  ">
+               
+                <div class="navbar bg-red-600 items-center p-7 justify-between ">
+                    <div class="flex-1">
+                        <div><div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu text-base menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl"> <img class="w-[54px]" src="./images/logo.png" alt="">Biker Zone</a>
+                </div>
+                <div class="form-control  ">
+                    <input   type="text" placeholder="images/logo.png " class="input input-bordered w-24 md:w-auto" />
+                  </div>
+            </nav>
+
+    </header>
+
+
+                     <!-- banner section start -->
+
+
+    <banner class="">
+        <div class=" md:container md:mx-auto card  bg-base-100 shadow-xl image-full w-[1440px] h-[600px]">
+            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+    </banner>
